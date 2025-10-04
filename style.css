@@ -24,9 +24,9 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 40px;
     background-color: black;
-    overflow-x:scroll;
+    overflow-x:hidden;
 }
 .image__placeholder,.projects__project{
     padding: 140px 240px;
@@ -40,9 +40,11 @@ button{
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 40px;
+    justify-content: center;
     align-items: center;
     padding: 50px;
+    flex-wrap: wrap;
 }
 .home{
     display: flex;
@@ -67,4 +69,11 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.projects__project:hover{
+    padding: 190px 290px;
+    transition: 1s;
+}
+.projects__project{
+    transition: 1s;
 }

@@ -33,3 +33,19 @@ function updateButtonText() {
 }
 window.addEventListener('scroll', updateButtonText);
 window.addEventListener('load', updateButtonText);
+
+
+    const scrollContainer = document.getElementById("scrollContainer");
+    const scrollLeft = document.getElementById("scrollLeft");
+    const scrollRight = document.getElementById("scrollRight");
+
+    const scrollAmount = 535; // pixels to scroll each click
+
+    scrollRight.addEventListener("click", () => {
+      scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+
+    scrollLeft.addEventListener("click", () => {
+      scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
+
