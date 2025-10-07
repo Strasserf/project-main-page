@@ -23,7 +23,7 @@ h1{
     color: white;
 }
 .info{
-    background-color: rgb(253, 235, 223);
+    background-color: rgb(255, 230, 200);
     padding: 50px;
     margin: 100px 200px;
     font-size: 20px;
@@ -63,13 +63,6 @@ button{
     flex-wrap: wrap;
 }
 .home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    background-color: aqua;
     writing-mode: vertical-lr;
 }
 .navigation{
@@ -86,7 +79,7 @@ button{
     flex-direction: row;
     align-items: center;
 }
-.scroll__button{
+.scroll__button, .home{
     padding: 48px;
     display: flex;
     justify-content: center;
@@ -95,10 +88,19 @@ button{
     border-radius: 20px;
     border: none;
     transition: .25s;
+    background-color: rgb(255, 230, 200);
+    font-size: 15px;
+    font-family: "IM Fell French Canon", serif;
+    font-weight: 1000;
 }
 .scroll__button:hover{
-    background-color: rgb(255, 228, 202);
+    background-color: rgb(255, 211, 170);
     transition: .25s;
+}
+.home:hover{
+    background-color: rgb(255, 211, 170);
+    transition: .25s;
+    padding: 60px;
 }
 .projects__project:hover{
     padding: 190px 290px;
