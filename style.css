@@ -29,7 +29,7 @@ h1{
     font-size: 20px;
     border-radius: 20px;
 }
-h1,.info{
+h1,.info,h2{
     font-family: "IM Fell French Canon", serif;
     font-weight: 400;
     font-style: normal; 
@@ -46,7 +46,7 @@ h1,.info{
 }
 .image__placeholder,.projects__project{
     padding: 140px 240px;
-    background-color: rgb(170, 235, 255);
+    background-color: rgb(145, 98, 87);
 }
 button{
     width: 80px;
@@ -102,10 +102,21 @@ button{
     transition: .25s;
     padding: 60px;
 }
-.projects__project:hover{
-    padding: 190px 290px;
+.project__thubnails:hover{
+    width: 600px;
     transition: 1s;
 }
 .projects__project{
+    height: 600px;
+    padding: 20px 20px;
+    border-radius: 20px;
     transition: 1s;
+}
+.project__thubnails{
+    width: 500px;
+    transition: 1s;
+    border-radius: 20px;
+}
+h2{
+    margin-bottom: 20px;
 }
