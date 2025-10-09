@@ -14,7 +14,7 @@ button.addEventListener('click', () => {
   } else {
     
     window.scrollBy({
-      top: viewportHeight,
+      top: docHeight,
       behavior: 'smooth'
     });
   }
@@ -48,4 +48,3 @@ window.addEventListener('load', updateButtonText);
     scrollLeft.addEventListener("click", () => {
       scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     });
-

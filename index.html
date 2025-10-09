@@ -1,126 +1,196 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="navigation">
         <button class="home" id="home">></button>
     </div>
 
-    <h1>Nadpis</h1>
+    <div class="title">
+        <h1>Události 2. Světové války</h1>
+    </div>
 
     <div class="info">
-        info
+        V tomto projektu se dozvíte, jak probíhala 2. světová válka ve formě stránek studentů 2. ročníku informačních
+        technologií.
     </div>
     <div class="scroll">
-        <button class="scroll__button" id="scrollLeft"> < </button>
-    <div class="project__images" id="scrollContainer">
-        <div class="image__placeholder">1</div>
-        <div class="image__placeholder">2</div>
-        <div class="image__placeholder">3</div>
-        <div class="image__placeholder">2</div>
-        <div class="image__placeholder">3</div>
-        <div class="image__placeholder">2</div>
-        <div class="image__placeholder">3</div>
+        <button class="scroll__button" id="scrollLeft">
+            < </button>
+                <div class="project__images" id="scrollContainer">
+                    <div class="image__placeholder"><img class="project__thubnails" src="images/churchill.jpg" alt="">
+                    </div>
+                    <div class="image__placeholder"><img class="project__thubnails" src="images/holokaust.jpeg" alt="">
+                    </div>
+                    <div class="image__placeholder"><img class="project__thubnails" src="images/pearl_harbor.jpg"
+                            alt=""></div>
+                    <div class="image__placeholder"><img class="project__thubnails" src="images/hacha.jpeg" alt="">
+                    </div>
+                    <div class="image__placeholder"><img class="project__thubnails" src="images/hiroshima_nagasaki.jpg"
+                            alt=""></div>
+                    <div class="image__placeholder"><img class="project__thubnails" src="images/ravensbruck.jpg" alt="">
+                    </div>
+                    <div class="image__placeholder"><img class="project__thubnails" src="images/osn.jpeg" alt=""></div>
+                </div>
+                <button class="scroll__button" id="scrollRight"> > </button>
     </div>
-        <button class="scroll__button" id="scrollRight"> > </button>
-</div>
     <div class="projects">
         <div class="projects__project">
-                <h2>Hirošima a Nagasaki</h2>
-            <img class="project__thubnails" src="images/hiroshima_nagasaki.jpg" alt=""><h2>Josef Sika</h2></div>
+            <h2>Hirošima a Nagasaki</h2>
+            <img class="project__thubnails" src="images/hiroshima_nagasaki.jpg" alt="">
+            <p>Josef Sika</p>
+        </div>
         <div class="projects__project">
-                <h2>Operace Anthropoid</h2>
-            <img class="project__thubnails" src="images/anthropoid.jpg" alt=""><h2>Filip Procházka</h2></div>
-                <div class="projects__project">
-                <h2>Vylodění v Normandii</h2>
-            <img class="project__thubnails" src="images/normandie.jpg" alt=""><h2>Filip Strasser</h2></div>
-                <div class="projects__project">
-                <h2>Nicholas Winton</h2>
-            <img class="project__thubnails" src="images/winton.jpg" alt=""><h2>Svatopluk Krejsa</h2></div>
-                <div class="projects__project">
-                <h2>Osvětim</h2>
-            <img class="project__thubnails" src="images/osvetim.jpeg" alt="">Jan Kupeček</div>
-                <div class="projects__project">
-                <h2>Emil Hácha</h2>
-            <img class="project__thubnails" src="images/hacha.jpeg" alt=""><h2>Vojtěch Pytlík </h2></div>
-                <div class="projects__project">
-                <h2>Útok na Pearl Harbor</h2>
-            <img class="project__thubnails" src="images/pearl_harbor.jpg" alt=""><h2>Martin Kříž</h2></div>
-                <div class="projects__project">
-                <h2>Operace Barbarossa</h2>
-            <img class="project__thubnails" src="images/barbarossa.jpg" alt=""><h2>Filip Podhradský </h2></div>
-                <div class="projects__project">
-                <h2>Život dětí v Terezíně</h2>
-            <img class="project__thubnails" src="images/terezin.jpg" alt=""><h2>Aneta Langova</h2></div>
-                <div class="projects__project">
-                <h2>Benito Mussolini</h2>
-            <img class="project__thubnails" src="images/mussolini.jpg" alt=""><h2>Matyáš Konvalinka</h2></div>
-                <div class="projects__project">
-                <h2>Heidrichiáda</h2>
-            <img class="project__thubnails" src="images/heinrich.jpg" alt=""><h2>Josef Šindelář </h2></div>
-                <div class="projects__project">
-                <h2>Koncentrační tábor Ravensbruck</h2>
-            <img class="project__thubnails" src="images/ravensbruck.jpg" alt=""><h2>Šimon Pelnář</h2></div>
-                <div class="projects__project">
-                <h2>Winston Churchill</h2>
-            <img class="project__thubnails" src="images/churchill.jpg" alt=""><h2>Daniel Volfík</h2></div>
-                <div class="projects__project">
-                <h2>Irena Sandlerová</h2>
-            <img class="project__thubnails" src="images/sandller.jpg" alt=""><h2>Tadeáš Válek</h2></div>
-                <div class="projects__project">
-                <h2>Hirohito</h2>
-            <img class="project__thubnails" src="images/hirohito.jpg" alt=""><h2>František Kellner</h2></div>
-                <div class="projects__project">
-                <h2>Josef Gabčík</h2>
-            <img class="project__thubnails" src="images/gabcik.jpg" alt=""><h2>Jan Hrbek</h2></div>
-                <div class="projects__project">
-                <h2>Operace v Severní Africe</h2>
-            <img class="project__thubnails" src="images/africa.jpg" alt=""><h2>Tomáš Hepner</h2></div>
-                <div class="projects__project">
-                <h2>Lidice</h2>
-            <img class="project__thubnails" src="images/lidice.jpg" alt=""><h2>Kristýna Pechová</h2></div>
-                <div class="projects__project">
-                <h2>Zbrojení celého světa</h2>
-            <img class="project__thubnails" src="images/guns.jpg" alt=""><h2>Jakub Böhm</h2></div>
-                <div class="projects__project">
-                <h2>Vznik OSN</h2>
-            <img class="project__thubnails" src="images/osn.jpeg" alt=""><h2>Dykaliuk Yuliia</h2></div>
-                <div class="projects__project">
-                <h2>Neville Chamberlain</h2>
-            <img class="project__thubnails" src="images/chamberlain.jpg" alt=""><h2>Václav Dufek</h2></div>
-                <div class="projects__project">
-                <h2>Vylodění v Itáli</h2>
-            <img class="project__thubnails" src="images/italy.jpg" alt=""><h2>Jakub Formánek</h2></div>
-                <div class="projects__project">
-                <h2>Josif Stalin</h2>
-            <img class="project__thubnails" src="images/stalin.jpg" alt=""><h2>Martin Kocián</h2></div>
-                <div class="projects__project">
-                <h2>Varšavské povstání</h2>
-            <img class="project__thubnails" src="images/varsava.jpg" alt=""><h2>David Halačka</h2></div>
-                <div class="projects__project">
-                <h2>Oskar Schindler</h2>
-            <img class="project__thubnails" src="images/schindler.jpg" alt=""><h2>Michal Forst</h2></div>
-                <div class="projects__project">
-                <h2>Holokaust</h2>
-            <img class="project__thubnails" src="images/holokaust.jpeg" alt=""><h2>Matěj Barborka</h2></div>
-                <div class="projects__project">
-                <h2>Rudolf Vrba a útěk z Osvětimi</h2>
-            <img class="project__thubnails" src="images/vrba.jpg" alt=""><h2>Jan Fiala</h2></div>
-                        <div class="projects__project">
-                <h2>Příběh Václava Morávka</h2>
-            <img class="project__thubnails" src="images/moravek.jpg" alt=""><h2>Do Dang Quang</h2></div>
-                        <div class="projects__project">
-                <h2>Anna Franková</h2>
-            <img class="project__thubnails" src="images/frankova.jpg" alt=""><h2>Vojtěch Budka</h2></div>
+            <h2>Operace Anthropoid</h2>
+            <img class="project__thubnails" src="images/anthropoid.jpg" alt="">
+            <p>Filip Procházka</p>
+        </div>
+        <div class="projects__project">
+            <h2>Vylodění v Normandii</h2>
+            <img class="project__thubnails" src="images/normandie.jpg" alt="">
+            <p>Filip Strasser</p>
+        </div>
+        <div class="projects__project">
+            <h2>Nicholas Winton</h2>
+            <img class="project__thubnails" src="images/winton.jpg" alt="">
+            <p>Jan Kupeček</p>
+        </div>
+        <div class="projects__project">
+            <h2>Osvětim</h2>
+            <img class="project__thubnails" src="images/osvetim.jpeg" alt="">
+            <p>Svatopluk Krejsa</p>
+        </div>
+        <div class="projects__project">
+            <h2>Emil Hácha</h2>
+            <img class="project__thubnails" src="images/hacha.jpeg" alt="">
+            <p>Vojtěch Pytlík </p>
+        </div>
+        <div class="projects__project">
+            <h2>Útok na Pearl Harbor</h2>
+            <img class="project__thubnails" src="images/pearl_harbor.jpg" alt="">
+            <p>Martin Kříž</p>
+        </div>
+        <div class="projects__project">
+            <h2>Operace Barbarossa</h2>
+            <img class="project__thubnails" src="images/barbarossa.jpg" alt="">
+            <p>Filip Podhradský </p>
+        </div>
+        <div class="projects__project">
+            <h2>Život dětí v Terezíně</h2>
+            <img class="project__thubnails" src="images/terezin.jpg" alt="">
+            <p>Aneta Langova</hp2>
+        </div>
+        <div class="projects__project">
+            <h2>Benito Mussolini</h2>
+            <img class="project__thubnails" src="images/mussolini.jpg" alt="">
+            <p>Matyáš Konvalinka</p>
+        </div>
+        <div class="projects__project">
+            <h2>Heidrichiáda</h2>
+            <img class="project__thubnails" src="images/heinrich.jpg" alt="">
+            <p>Josef Šindelář </p>
+        </div>
+        <div class="projects__project">
+            <h2>Koncentrační tábor Ravensbruck</h2>
+            <img class="project__thubnails" src="images/ravensbruck.jpg" alt="">
+            <p>Šimon Pelnář</p>
+        </div>
+        <div class="projects__project">
+            <h2>Winston Churchill</h2>
+            <img class="project__thubnails" src="images/churchill.jpg" alt="">
+            <p>Daniel Volfík</p>
+        </div>
+        <div class="projects__project">
+            <h2>Irena Sandlerová</h2>
+            <img class="project__thubnails" src="images/sandller.jpg" alt="">
+            <p>Tadeáš Válek</p>
+        </div>
+        <div class="projects__project">
+            <h2>Hirohito</h2>
+            <img class="project__thubnails" src="images/hirohito.jpg" alt="">
+            <p>František Kellner</p>
+        </div>
+        <div class="projects__project">
+            <h2>Josef Gabčík</h2>
+            <img class="project__thubnails" src="images/gabcik.jpg" alt="">
+            <p>Jan Hrbek</p>
+        </div>
+        <div class="projects__project">
+            <h2>Operace v Severní Africe</h2>
+            <img class="project__thubnails" src="images/africa.jpg" alt="">
+            <p>Tomáš Hepner</p>
+        </div>
+        <div class="projects__project">
+            <h2>Lidice</h2>
+            <img class="project__thubnails" src="images/lidice.jpg" alt="">
+            <p>Kristýna Pechová</p>
+        </div>
+        <div class="projects__project">
+            <h2>Zbrojení celého světa</h2>
+            <img class="project__thubnails" src="images/guns.jpg" alt="">
+            <p>Jakub Böhm</p>
+        </div>
+        <div class="projects__project">
+            <h2>Vznik OSN</h2>
+            <img class="project__thubnails" src="images/osn.jpeg" alt="">
+            <p>Dykaliuk Yuliia</p>
+        </div>
+        <div class="projects__project">
+            <h2>Neville Chamberlain</h2>
+            <img class="project__thubnails" src="images/chamberlain.jpg" alt="">
+            <p>Václav Dufek</p>
+        </div>
+        <div class="projects__project">
+            <h2>Vylodění v Itáli</h2>
+            <img class="project__thubnails" src="images/italy.jpg" alt="">
+            <p>Jakub Formánek</p>
+        </div>
+        <div class="projects__project">
+            <h2>Josif Stalin</h2>
+            <img class="project__thubnails" src="images/stalin.jpg" alt="">
+            <p>Martin Kocián</p>
+        </div>
+        <div class="projects__project">
+            <h2>Varšavské povstání</h2>
+            <img class="project__thubnails" src="images/varsava.jpg" alt="">
+            <p>David Halačka</p>
+        </div>
+        <div class="projects__project">
+            <h2>Oskar Schindler</h2>
+            <img class="project__thubnails" src="images/schindler.jpg" alt="">
+            <p>Michal Forst</p>
+        </div>
+        <div class="projects__project">
+            <h2>Holokaust</h2>
+            <img class="project__thubnails" src="images/holokaust.jpeg" alt="">
+            <p>Matěj Barborka</p>
+        </div>
+        <div class="projects__project">
+            <h2>Rudolf Vrba a útěk z Osvětimi</h2>
+            <img class="project__thubnails" src="images/vrba.jpg" alt="">
+            <p>Jan Fiala</p>
+        </div>
+        <div class="projects__project">
+            <h2>Příběh Václava Morávka</h2>
+            <img class="project__thubnails" src="images/moravek.jpg" alt="">
+            <p>Do Dang Quang</p>
+        </div>
+        <div class="projects__project">
+            <h2>Anna Franková</h2>
+            <img class="project__thubnails" src="images/frankova.jpg" alt="">
+            <p>Vojtěch Budka</p>
+        </div>
 
     </div>
 
 </body>
+
 </html>

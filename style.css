@@ -11,7 +11,10 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-h1,.project__images{
+.title{
+    margin: 50px 500px;
+}
+.project__images{
     margin: 50px 700px;
     padding: 50px;
 }
@@ -21,15 +24,27 @@ h1{
     background-color: rgba(197, 162, 141, 0.308);
     border-radius:20px ;
     color: white;
+    border-bottom: solid rgba(247, 247, 247, 0.295) 3px;
+    border-top: solid rgba(247, 247, 247, 0.295) 3px;
+    padding: 50px;
 }
 .info{
-    background-color: rgb(255, 230, 200);
+    background: #d1a677;
+    background: linear-gradient(0deg,rgba(209, 166, 119, 1) 0%, rgba(255, 233, 204, 1) 100%);
     padding: 50px;
     margin: 100px 200px;
     font-size: 20px;
     border-radius: 20px;
+    border-bottom: solid rgb(138, 109, 73) 3px;
+    border-top: solid rgb(255, 255, 255) 3px;
 }
-h1,.info,h2{
+button{
+    background: #d1a677;
+    background: linear-gradient(0deg,rgba(209, 166, 119, 1) 0%, rgba(255, 233, 204, 1) 100%);
+    border-bottom: solid rgb(138, 109, 73) 3px;
+    border-top: solid rgb(255, 255, 255) 3px;
+}
+h1,.info,h2,p{
     font-family: "IM Fell French Canon", serif;
     font-weight: 400;
     font-style: normal; 
@@ -45,12 +60,10 @@ h1,.info,h2{
     overflow-x:hidden;
 }
 .image__placeholder,.projects__project{
-    padding: 140px 240px;
-    background-color: rgb(145, 98, 87);
-}
-button{
-    width: 80px;
-    height: 80px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #dea295;
+    background: linear-gradient(180deg,rgba(222, 162, 149, 1) 0%, rgba(133, 86, 78, 1) 100%)
 }
 .projects{
     background-color: black;
@@ -69,10 +82,12 @@ button{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 25px;
+    background-color: rgba(197, 162, 141, 0.308);
+    padding: 5px;
     display: flex;
     justify-content: center;
+    border-radius: 0 0 20px 20px;
+    border-bottom: solid rgba(247, 247, 247, 0.295) 3px;
 }
 .scroll{
     display: flex;
@@ -86,37 +101,65 @@ button{
     align-items: center;
     margin: 20px;
     border-radius: 20px;
-    border: none;
+    border-top: solid;
+    border-bottom: solid;
+    border-left: none;
+    border-right: none;
     transition: .25s;
     background-color: rgb(255, 230, 200);
     font-size: 15px;
     font-family: "IM Fell French Canon", serif;
     font-weight: 1000;
+    width: 80px;
+    height: 80px;
+    border-bottom: solid rgb(138, 109, 73) 3px;
+    border-top: solid rgb(255, 255, 255) 3px;
+    cursor: pointer;
 }
 .scroll__button:hover{
-    background-color: rgb(255, 211, 170);
-    transition: .25s;
+    background: #a9e4e8;
+    background: linear-gradient(180deg,rgba(169, 228, 232, 1) 0%, rgba(31, 151, 181, 1) 100%);
+    border-bottom: solid rgb(34, 114, 101) 3px;
+    border-top: solid rgb(255, 255, 255) 3px
 }
 .home:hover{
-    background-color: rgb(255, 211, 170);
-    transition: .25s;
+    background: #a9e4e8;
+    background: linear-gradient(180deg,rgba(169, 228, 232, 1) 0%, rgba(31, 151, 181, 1) 100%);
     padding: 60px;
+    border-bottom: solid rgb(34, 114, 101) 3px;
+    border-top: solid rgb(255, 255, 255) 3px;
 }
 .project__thubnails:hover{
     width: 600px;
+    height: 400px;
     transition: 1s;
+    cursor: zoom-in;
+}
+.projects__project:hover{
+    background: #b5a9e8;
+    background: linear-gradient(180deg,rgba(181, 169, 232, 1) 0%, rgba(109, 96, 130, 1) 100%);
+    cursor: pointer;
+    border-bottom: solid rgb(54, 70, 99) 3px;
+    border-top: solid rgb(184, 222, 253) 3px;
 }
 .projects__project{
-    height: 600px;
     padding: 20px 20px;
     border-radius: 20px;
-    transition: 1s;
+    border-bottom: solid rgb(99, 60, 54) 3px;
+    border-top: solid rgb(253, 192, 184) 3px;
 }
 .project__thubnails{
     width: 500px;
+    height: 300px;
     transition: 1s;
     border-radius: 20px;
+    object-fit: cover;
 }
 h2{
-    margin-bottom: 20px;
+    margin: 20px 0;
+    font-size: 30px;
+}
+p{
+    margin-top: 15px;
+    font-size: 20px;
 }
