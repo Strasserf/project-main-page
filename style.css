@@ -63,7 +63,9 @@ h1,.info,h2,p{
     padding: 20px;
     border-radius: 20px;
     background: #dea295;
-    background: linear-gradient(180deg,rgba(222, 162, 149, 1) 0%, rgba(133, 86, 78, 1) 100%)
+    background: linear-gradient(180deg,rgba(222, 162, 149, 1) 0%, rgba(133, 86, 78, 1) 100%);
+    transition: .5s;
+    cursor: zoom-in;
 }
 .projects{
     background-color: black;
@@ -88,6 +90,7 @@ h1,.info,h2,p{
     justify-content: center;
     border-radius: 0 0 20px 20px;
     border-bottom: solid rgba(247, 247, 247, 0.295) 3px;
+    z-index: 1;
 }
 .scroll{
     display: flex;
@@ -129,24 +132,21 @@ h1,.info,h2,p{
     border-bottom: solid rgb(34, 114, 101) 3px;
     border-top: solid rgb(255, 255, 255) 3px;
 }
-.project__thubnails:hover{
-    width: 600px;
-    height: 400px;
-    transition: 1s;
-    cursor: zoom-in;
-}
 .projects__project:hover{
     background: #b5a9e8;
     background: linear-gradient(180deg,rgba(181, 169, 232, 1) 0%, rgba(109, 96, 130, 1) 100%);
     cursor: pointer;
     border-bottom: solid rgb(54, 70, 99) 3px;
     border-top: solid rgb(184, 222, 253) 3px;
+    transform: scale(1.1);
+    transition: .5s;
 }
 .projects__project{
     padding: 20px 20px;
     border-radius: 20px;
     border-bottom: solid rgb(99, 60, 54) 3px;
     border-top: solid rgb(253, 192, 184) 3px;
+    transition: .5s;
 }
 .project__thubnails{
     width: 500px;
@@ -154,6 +154,10 @@ h1,.info,h2,p{
     transition: 1s;
     border-radius: 20px;
     object-fit: cover;
+}
+.image__placeholder:hover{
+    transform: scale(1.1);
+    transition: .5s;
 }
 h2{
     margin: 20px 0;
