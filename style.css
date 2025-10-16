@@ -56,8 +56,10 @@ h1,.info,h2,p{
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    background-color: black;
+    background: #1c1c1c;
+    background: linear-gradient(0deg,rgba(28, 28, 28, 1) 0%, rgba(59, 59, 59, 1) 100%);
     overflow-x:hidden;
+    border-radius: 20px;
 }
 .image__placeholder,.projects__project{
     padding: 20px;
@@ -65,10 +67,15 @@ h1,.info,h2,p{
     background: #dea295;
     background: linear-gradient(180deg,rgba(222, 162, 149, 1) 0%, rgba(133, 86, 78, 1) 100%);
     transition: .5s;
+}
+.image__placeholder{
     cursor: zoom-in;
+    border-bottom: solid rgb(99, 60, 54) 3px;
+    border-top: solid rgb(253, 192, 184) 3px;
 }
 .projects{
-    background-color: black;
+    background: #1c1c1c;
+    background: linear-gradient(0deg,rgba(28, 28, 28, 1) 0%, rgba(59, 59, 59, 1) 100%);
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -166,4 +173,8 @@ h2{
 p{
     margin-top: 15px;
     font-size: 20px;
+}
+.projects,.project__images{
+    border-top: solid rgb(95, 95, 95);
+    border-bottom: solid rgb(2, 2, 2);
 }
