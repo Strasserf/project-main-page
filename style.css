@@ -191,6 +191,12 @@ p{
     .info{
         margin: 100px 50px ;
     }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width:455px){
     .scroll{
