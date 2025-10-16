@@ -178,3 +178,22 @@ p{
     border-top: solid rgb(95, 95, 95);
     border-bottom: solid rgb(2, 2, 2);
 }
+@media only screen and (max-width:1024px){
+    .title{
+        margin: 50px;
+    }
+}
+@media only screen and (max-width:768px){
+    .project__thubnails{
+        width: 250px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width:455px){
+    .scroll{
+        display: none;
+    }
+    .info{
+        margin: 100px 50px ;
+    }
+}
