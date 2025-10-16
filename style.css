@@ -64,14 +64,14 @@ h1,.info,h2,p{
 .image__placeholder,.projects__project{
     padding: 20px;
     border-radius: 20px;
-    background: #dea295;
-    background: linear-gradient(180deg,rgba(222, 162, 149, 1) 0%, rgba(133, 86, 78, 1) 100%);
+    background: #855c2a;
+    background: linear-gradient(0deg, rgba(133, 92, 42, 1) 0%, rgba(212, 173, 142, 1) 100%);
     transition: .5s;
+    border-bottom: solid rgb(99, 72, 54) 3px;
+    border-top: solid rgb(253, 212, 184) 3px;
 }
 .image__placeholder{
     cursor: zoom-in;
-    border-bottom: solid rgb(99, 60, 54) 3px;
-    border-top: solid rgb(253, 192, 184) 3px;
 }
 .projects{
     background: #1c1c1c;
@@ -91,13 +91,8 @@ h1,.info,h2,p{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-color: rgba(197, 162, 141, 0.308);
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    border-radius: 0 0 20px 20px;
-    border-bottom: solid rgba(247, 247, 247, 0.295) 3px;
     z-index: 1;
+    padding: 5px;
 }
 .scroll{
     display: flex;
@@ -105,7 +100,7 @@ h1,.info,h2,p{
     align-items: center;
 }
 .scroll__button, .home{
-    padding: 48px;
+    padding: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +112,7 @@ h1,.info,h2,p{
     border-right: none;
     transition: .25s;
     background-color: rgb(255, 230, 200);
-    font-size: 15px;
+    font-size: 20px;
     font-family: "IM Fell French Canon", serif;
     font-weight: 1000;
     width: 80px;
@@ -135,13 +130,13 @@ h1,.info,h2,p{
 .home:hover{
     background: #a9e4e8;
     background: linear-gradient(180deg,rgba(169, 228, 232, 1) 0%, rgba(31, 151, 181, 1) 100%);
-    padding: 60px;
+    padding: 50px;
     border-bottom: solid rgb(34, 114, 101) 3px;
     border-top: solid rgb(255, 255, 255) 3px;
 }
 .projects__project:hover{
-    background: #b5a9e8;
-    background: linear-gradient(180deg,rgba(181, 169, 232, 1) 0%, rgba(109, 96, 130, 1) 100%);
+    background: #b0834c;
+    background: linear-gradient(0deg, rgba(176, 131, 76, 1) 0%, rgba(255, 247, 240, 1) 100%);
     cursor: pointer;
     border-bottom: solid rgb(54, 70, 99) 3px;
     border-top: solid rgb(184, 222, 253) 3px;
@@ -151,8 +146,6 @@ h1,.info,h2,p{
 .projects__project{
     padding: 20px 20px;
     border-radius: 20px;
-    border-bottom: solid rgb(99, 60, 54) 3px;
-    border-top: solid rgb(253, 192, 184) 3px;
     transition: .5s;
 }
 .project__thubnails{
